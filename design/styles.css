@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    background-image: url('images/pattern-bg.svg');
+    align-items: center;
+}
+.bgtop{
+    background-color: #f1f1f1;
+    background-image: url('images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.bgbottom{
+    background-color: #f1f1f1;
+    background-image: url('images/pattern-quotes.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.text{
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
