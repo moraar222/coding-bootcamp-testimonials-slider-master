@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    background-image: url('images/pattern-bg.svg');
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.bgtop{
+    background-color: #f1f1f1;
+    background-image: url('images/pattern-curve.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+
+.text{
+    text-align: left;
+    font-size: 1.5rem;
+    color: #36333f;
+    line-height: 1.5;
+    max-width: 30rem;
+}
+main{
+    display: flex;
+    gap : 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    flex-direction: row-reverse;
+}
+.name{
+    font-size: 1.5rem;
+    color: #0f0f0f;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.name2{
+    font-size: 1.5rem;
+    color: #aaa5a5;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+#info{
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+img{
+    width: 30rem;
+    max-width: 30rem;
+    /* border-radius: 50%; */
+    margin-top: 1rem;
+    box-shadow: 1px 1px 10px 1px #0f0f0f1e;
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    background-color: #f1f1f1;
+    box-shadow: 1px 1px 10px 1px #0f0f0f1e;
+    border-radius: 1rem;;
+}
+.buttons button{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f0f0f;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
