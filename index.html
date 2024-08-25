@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <link Script src="script.js"></link>
+  <script src="script.js" defer></script> <!-- Corrected script tag -->
   
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -20,23 +19,30 @@
  
  <div class="bgquotes"></div>
  <main>
-  <div class="photo" >
+  <div class="photo">
     <div class="buttons">
-      <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="18"><path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/></svg></button>
-      <button id="next"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="18"><path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/></svg></button>
+      <button id="prev" onclick="prevSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="18">
+          <path fill="none" stroke="#8585AC" stroke-width="3" d="M11 1L3 9l8 8"/>
+        </svg>
+      </button>
+      <button id="next" onclick="nextSlide()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="18">
+          <path fill="none" stroke="#8585AC" stroke-width="3" d="M2 1l8 8-8 8"/>
+        </svg>
+      </button>
     </div>
     <div class="bgtop"></div>
-  <img src="./images/image-tanya.jpg" alt="background pattern" class="background-pattern"></div>
-  <div class="text"> “ I’ve been interested in coding for a while but never taken the jump, until now. 
+    <img src="./images/image-tanya.jpg" alt="background pattern" class="background-pattern" id="testimonial-image">
+  </div>
+  <div class="text" id="testimonial-text">
+    “ I’ve been interested in coding for a while but never taken the jump, until now. 
     I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
     excited about the future. ”
-  
-    <span id="info"><div class="name">Tanya Sinclair</div>
-   <div class="name2"> UX Engineer</div>
-  </span>
-  
-    
+      <div class="name">Tanya Sinclair</div>
+      <div class="name2">UX Engineer</div>
     </div>
+  </div>
  </main>
 </body>
 </html>
