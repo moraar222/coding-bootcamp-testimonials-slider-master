@@ -89,6 +89,6 @@ img {
     font-weight: 700;
     color: #0f0f0f;
     border: none;
-    cursor: ;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
